@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {
+            float: left;
+            margin-top: 0px;
+            width: 50%;
+            padding: 10px;
+            height: 770px ;
+        }
+
+        .left_box{
+            margin-left: 100px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        body{
+            background-color: #F4F5F7;
+        }
+
+        .filler{
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight:normal ;
+            font-size: 27px;
+            border-radius: 5px;
+            height:800px;
+            width: 1300px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 20px;
+        }
+
+        .list{
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight:normal ;
+            font-size: 27px;
+            height:2000px;
+            width: 1300px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 50px;
+            text-align:center;
+        }
+
+        .asana{
+            height: 170px;
+            width: auto;
+            margin-top: 32px;
+            margin-bottom: 1px;
+        }
+
+        .info{
+            height:200px;
+            width: auto;
+        }
+        
+        .welcome{
+            margin-left: 24px;
+            margin-top: 20px;
+        }
+
+        .manual{
+            margin-left: 24px;
+            margin-top: 15px;
+        }
+
+        .left{
+            margin-left: 25px;
+            line-height: 1.2    ;
+        }
+
+        .grid-container_poses {
+            display: grid;
+            margin-left: auto;
+            margin-right: auto;
+            max-height:1000px;
+            width: 1000px;
+            row-gap: 20px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+
+        .grid-container_idles{
+            display: grid;
+            margin-left: auto;
+            margin-right: auto;
+            max-height:1000px;
+            width: 1000px;
+            row-gap: 20px;
+            gap: 85px;
+            margin-bottom: 30px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+        }
+
+        .grid-container_equipment{
+            display: grid;
+            margin-left: auto;
+            margin-right: auto;
+            max-height:1000px;
+            width: 1000px;
+            row-gap: 20px;
+            gap: 50px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+        }
+
+        .grid_child{
+            height:300px;
+            width: 300px;
+            margin-top: 20px;
+        }
+        
+        .class{
+            height:100%;
+            width: 100%;
+            object-fit: fill;
+        }
+
+        .text_under{
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-size: 40px;
+        }
+
+        .BottomImage{
+            grid-column: 1/span 3;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            justify-content: center ;
+            margin-left: 100px;
+        }
+
+        .BottomImage .class img {
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>   
+    <div class="filler">
+        <div class="column">
+            <img class="asana" src="./assets/images/Asana.png">
+            
+            <h2 class="welcome"><FONT COLOR="#1C1380">
+                Welcome to ASANA</FONT>
+            </h2>
+
+            <p class="left"><FONT COLOR="#1C1380">
+                This application aims to introduce yoga to those who are interested
+                by exposing them to these 5 basic forms.
+            </FONT></p>
+
+            <p class="left"><FONT COLOR="#1C1380">
+                This helps them to improve and ensure that their
+                form is right, preventing injuries during practice.
+            </FONT></p>
+
+            <p class="left"><FONT COLOR="#1C1380">
+                Features:
+            </FONT></p>
+
+            <p class="left"><FONT COLOR="#1C1380">
+                <ul>
+                    <li>Detection of 5 different poses</li>
+                    <li>Detection of 3 different idles</li>
+                    <li>Detection of 3 different equipments</li>
+                    <li>A rating determining how well you are doing </li>
+                    <li>AI voice audio</li>
+                    <li>Calming music</li>
+                </ul>
+            </FONT></p>
+        </div>
+        <div class="column">
+            <div class="left_box">
+                <img class="info" src="./assets/images/HTML.png">
+                
+                <h2 class="manual" COLOR="#1C1380"><FONT COLOR="#1C1380">
+                    Instruction Manual</FONT>
+                </h2>
+
+                <p class="left"><FONT COLOR="#1C1380">
+                    For the best experience while using<br>
+                    the application ensure that you have:
+                    <ul>
+                        <li>Enough space</li>
+                        <li>Remove any clutter or distraction<br>
+                            in your enviroment</li>
+                    </ul>
+                </FONT></p>
+ 
+    
+                <p class="left"><FONT COLOR="#1C1380">
+                    The camera will be turned on.<br> 
+                    There, strike one of the yoga poses <br>
+                    listed below and the application will<br> 
+                    detect and determine your pose.
+                </FONT></p>    
+
+            </div>
+        </div>
+    </div>
+   
+    <div class="list">
+
+        <h2><FONT COLOR="#1C1380">
+            <FONT COLOR="#1C1380">
+            These are some of the poses you can do
+        </FONT></h2>
+
+        <div class="grid-container_poses">
+            <div class="grid_child">
+                <img class="class" src="./assets/images/Dog_new-2.png">
+                <p class="text_under"><FONT COLOR="#1C1380"><b>Dog</b></FONT></p>
+            </div>
+
+            <div class="grid_child">
+                <img class="class" src="./assets/images/Warrior2_new-2.png">
+                <p class="text_under"><FONT COLOR="#1C1380"><b>Warrior 2</b></FONT></p>
+            </div>
+
+            <div class="grid_child">
+                <img class="class" src="./assets/images/Tree_new-2.png">
+                <p class="text_under" ><FONT COLOR="#1C1380"><b>Tree</b></FONT></p>
+            </div>
+            <div class="BottomImage">
+                <div class="grid_child">
+                    <img class="class" src="./assets/images/Warrior1_new-2.png">
+                    <p class="text_under"><FONT COLOR="#1C1380"><b>Warrior 1</b></FONT></p>
+                </div>
+
+                <div class="grid_child">    
+                    <img class="class" src="./assets/images/Plank_new-2.png">
+                    <p class="text_under"><FONT COLOR="#1C1380"><b>Plank</b></FONT></p>
+                </div>    
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <h2><FONT COLOR="#1C1380">
+            Idles
+        </FONT></h2>
+
+        <div class="grid-container_idles">
+            <div class="grid_child">
+                <img class="class" src="./assets/images/Lying_new.png">
+                <p class="text_under"><FONT COLOR="#1C1380"><b>Lying</b></FONT></p>
+            </div>
+            
+            <div class="grid_child">
+                <img class="class" src="./assets/images/Sitting_new-2.png">
+                <p class="text_under"><FONT COLOR="#1C1380"><b>Sitting</b></FONT></p>
+            </div>
+
+            <div class="grid_child">
+                <img class="class" src="./assets/images/Standing_new-2.png">
+                <p class="text_under"><FONT COLOR="#1C1380"><b>Standing</b></FONT></p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <h2><FONT COLOR="#1C1380">
+            Equipments
+        </FONT></h2>
+
+        <div class="grid-container_equipment">
+            <div class="grid_child">
+                <img class="class" src="./assets/images/Ball-2.png">
+                <p class="text_under"><FONT COLOR="#1C1380"><b>Ball</b></FONT></p>
+            </div>
+            
+            <div class="grid_child">
+                <img class="class" src="./assets/images/Mat-2.png">
+                <p class="text_under"><FONT COLOR="#1C1380"><b>Mat</b></FONT></p>
+            </div>
+
+            <div class="grid_child">
+                <img class="class" src="./assets/images/Block-2.png">
+                <p class="text_under"><FONT COLOR="#1C1380"><b>Block</b></FONT></p>
+            </div>
+        </div>
+
+    </div>
+   
+</body>
+</html>
+
+
+
+
+
+
